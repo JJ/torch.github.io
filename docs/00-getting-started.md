@@ -28,11 +28,13 @@ and then uses LuaRocks (the lua package manager) to install core packages like
 [nn](https://github.com/torch/nn/blob/master/README.md) and 
 [paths](https://github.com/torch/paths/blob/master/README.md), as well as a few other packages. 
 
-The script adds torch to your PATH variable. You just have to source it once to refresh your env variables
+The script adds torch to your PATH variable. You just have to source it once to refresh your env variables. The installation script will detect what is your current shell and add the path to the correct configuration file.
 
 ```bash
-# On Linux
+# On Linux with bash
 source ~/.bashrc
+# On Linux with zsh
+source ~/.zshrc
 # On OSX
 source ~/.profile
 ```
